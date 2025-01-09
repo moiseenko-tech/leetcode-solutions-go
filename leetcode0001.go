@@ -1,4 +1,4 @@
-package p0001_two_sum
+package leetcode0001
 
 import "sort"
 
