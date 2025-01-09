@@ -18,15 +18,17 @@ func twoSum(nums []int, target int) []int {
 
 	// perform a search in sorted slice
 	i, j := 0, N-1
+search:
 	for i < j {
 		sum := nums[indexes[i]] + nums[indexes[j]]
+
 		switch {
 		case sum > target:
 			j--
 		case sum < target:
 			i++
 		default:
-			break
+			break search
 		}
 	}
 
