@@ -18,7 +18,6 @@ func twoSum(nums []int, target int) []int {
 
 	// perform a search in sorted slice
 	left, right := 0, arrLength-1
-search:
 	for left < right {
 		sum := nums[indexes[left]] + nums[indexes[right]]
 
@@ -28,9 +27,9 @@ search:
 		case sum < target:
 			left++
 		default:
-			break search
+			return []int{indexes[left], indexes[right]}
 		}
 	}
 
-	return []int{indexes[left], indexes[right]}
+	return []int{}
 }
