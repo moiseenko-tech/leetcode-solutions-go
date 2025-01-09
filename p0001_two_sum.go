@@ -20,12 +20,13 @@ func twoSum(nums []int, target int) []int {
 	i, j := 0, N-1
 	for i < j {
 		sum := nums[indexes[i]] + nums[indexes[j]]
-		if sum == target {
-			break
-		} else if sum > target {
+		switch {
+		case sum > target:
 			j--
-		} else {
+		case sum < target:
 			i++
+		default:
+			break
 		}
 	}
 
