@@ -3,11 +3,11 @@ package p0001_two_sum
 import "sort"
 
 func twoSum(nums []int, target int) []int {
-	N := len(nums)
+	arrLength := len(nums)
 
 	// positions in the original slice
-	indexes := make([]int, N)
-	for i := range N {
+	indexes := make([]int, arrLength)
+	for i := range arrLength {
 		indexes[i] = i
 	}
 
@@ -17,7 +17,7 @@ func twoSum(nums []int, target int) []int {
 	})
 
 	// perform a search in sorted slice
-	left, right := 0, N-1
+	left, right := 0, arrLength-1
 search:
 	for left < right {
 		sum := nums[indexes[left]] + nums[indexes[right]]
