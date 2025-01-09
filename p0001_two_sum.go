@@ -7,7 +7,7 @@ func twoSum(nums []int, target int) []int {
 
 	// positions in the original slice
 	indexes := make([]int, N)
-	for i := 0; i < N; i++ {
+	for i := range N {
 		indexes[i] = i
 	}
 
