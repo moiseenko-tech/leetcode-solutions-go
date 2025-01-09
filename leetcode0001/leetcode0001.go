@@ -2,6 +2,8 @@ package leetcode0001
 
 import "sort"
 
+// Solution for LeetCode problem 1: Two Sum
+// https://leetcode.com/problems/two-sum/description/
 func twoSum(nums []int, target int) []int {
 	arrLength := len(nums)
 
