@@ -1,0 +1,14 @@
+---
+linters:
+  enable-all: true
+  disable:
+    - exportloopref
+  fast: false
+
+issues:
+
+output:
+
+run:
+
+severity:
